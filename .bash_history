@@ -54,3 +54,22 @@ git create
 git help
 git init
 git status
+git status
+git pull
+git init
+git remote add origin https://github.com/guinaldi/pesquisase.git
+git remote -v
+git add .
+git commit -m "Initial Commit"
+git config --global guinaldi@hotmail.com
+git config
+git init
+git remote add origin https://github.com/guinaldi/pesquisase
+git remote -v
+git add *
+git commit -m "Initial Commit"
+git config
+git config --global user.email "guinaldi@hotmail.com"
+git config --global user.name "GuiNaldi" 
+git commit -m "Initial Commit"
+git push origin master

@@ -2398,3 +2398,311 @@ Version: '5.6.13'  socket: '/tmp/mysql.sock'  port: 3306  Source distribution
 2015-02-28 15:31:48 505 [Note] Event Scheduler: Loaded 0 events
 2015-02-28 15:31:48 505 [Note] /home/action/.parts/packages/mysql/5.6.13/bin/mysqld: ready for connections.
 Version: '5.6.13'  socket: '/tmp/mysql.sock'  port: 3306  Source distribution
+2015-03-01 00:00:29 505 [Note] /home/action/.parts/packages/mysql/5.6.13/bin/mysqld: Normal shutdown
+
+2015-03-01 00:00:29 505 [Note] Giving 0 client threads a chance to die gracefully
+2015-03-01 00:00:29 505 [Note] Event Scheduler: Purging the queue. 0 events
+2015-03-01 00:00:29 505 [Note] Shutting down slave threads
+2015-03-01 00:00:29 505 [Note] Forcefully disconnecting 0 remaining clients
+2015-03-01 00:00:29 505 [Note] Binlog end
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'partition'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'ARCHIVE'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_METRICS'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_CMP'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_LOCKS'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'INNODB_TRX'
+2015-03-01 00:00:29 505 [Note] Shutting down plugin 'InnoDB'
+2015-03-01 00:00:29 505 [Note] InnoDB: FTS optimize thread exiting.
+2015-03-01 00:00:29 505 [Note] InnoDB: Starting shutdown...
+2015-03-01 00:00:31 505 [Note] InnoDB: Shutdown completed; log sequence number 1827478
+2015-03-01 00:00:31 505 [Note] Shutting down plugin 'BLACKHOLE'
+2015-03-01 00:00:31 505 [Note] Shutting down plugin 'MyISAM'
+2015-03-01 00:00:31 505 [Note] Shutting down plugin 'MEMORY'
+2015-03-01 00:00:31 505 [Note] Shutting down plugin 'CSV'
+2015-03-01 00:00:31 505 [Note] Shutting down plugin 'MRG_MYISAM'
+2015-03-01 00:00:31 505 [Note] Shutting down plugin 'sha256_password'
+2015-03-01 00:00:31 505 [Note] Shutting down plugin 'mysql_old_password'
+2015-03-01 00:00:31 505 [Note] Shutting down plugin 'mysql_native_password'
+2015-03-01 00:00:31 505 [Note] Shutting down plugin 'binlog'
+2015-03-01 00:00:31 505 [Note] /home/action/.parts/packages/mysql/5.6.13/bin/mysqld: Shutdown complete
+
+150301 00:00:31 mysqld_safe mysqld from pid file /home/action/.parts/var/mysql/pesquisase-193085.pid ended
+150301 03:01:32 mysqld_safe Starting mysqld daemon with databases from /home/action/.parts/var/mysql
+2015-03-01 03:01:35 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2015-03-01 03:01:35 493 [Note] Plugin 'FEDERATED' is disabled.
+2015-03-01 03:01:35 493 [Note] InnoDB: The InnoDB memory heap is disabled
+2015-03-01 03:01:35 493 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2015-03-01 03:01:35 493 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2015-03-01 03:01:36 493 [Note] InnoDB: Using CPU crc32 instructions
+2015-03-01 03:01:36 493 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2015-03-01 03:01:36 493 [Note] InnoDB: Completed initialization of buffer pool
+2015-03-01 03:01:36 493 [Note] InnoDB: Highest supported file format is Barracuda.
+2015-03-01 03:01:38 493 [Note] InnoDB: 128 rollback segment(s) are active.
+2015-03-01 03:01:38 493 [Note] InnoDB: Waiting for purge to start
+2015-03-01 03:01:38 493 [Note] InnoDB: 5.6.13 started; log sequence number 1827478
+2015-03-01 03:01:38 493 [Note] RSA private key file not found: /home/action/.parts/var/mysql//private_key.pem. Some authentication plugins will not work.
+2015-03-01 03:01:38 493 [Note] RSA public key file not found: /home/action/.parts/var/mysql//public_key.pem. Some authentication plugins will not work.
+2015-03-01 03:01:38 493 [Note] Server hostname (bind-address): '*'; port: 3306
+2015-03-01 03:01:38 493 [Note] IPv6 is available.
+2015-03-01 03:01:38 493 [Note]   - '::' resolves to '::';
+2015-03-01 03:01:38 493 [Note] Server socket created on IP: '::'.
+2015-03-01 03:01:38 493 [Note] Event Scheduler: Loaded 0 events
+2015-03-01 03:01:38 493 [Note] /home/action/.parts/packages/mysql/5.6.13/bin/mysqld: ready for connections.
+Version: '5.6.13'  socket: '/tmp/mysql.sock'  port: 3306  Source distribution
+2015-03-01 06:00:27 493 [Note] /home/action/.parts/packages/mysql/5.6.13/bin/mysqld: Normal shutdown
+
+2015-03-01 06:00:27 493 [Note] Giving 0 client threads a chance to die gracefully
+2015-03-01 06:00:27 493 [Note] Event Scheduler: Purging the queue. 0 events
+2015-03-01 06:00:27 493 [Note] Shutting down slave threads
+2015-03-01 06:00:27 493 [Note] Forcefully disconnecting 0 remaining clients
+2015-03-01 06:00:27 493 [Note] Binlog end
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'partition'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'ARCHIVE'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_METRICS'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_CMP'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_LOCKS'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'INNODB_TRX'
+2015-03-01 06:00:28 493 [Note] Shutting down plugin 'InnoDB'
+2015-03-01 06:00:28 493 [Note] InnoDB: FTS optimize thread exiting.
+2015-03-01 06:00:28 493 [Note] InnoDB: Starting shutdown...
+2015-03-01 06:00:30 493 [Note] InnoDB: Shutdown completed; log sequence number 1841268
+2015-03-01 06:00:30 493 [Note] Shutting down plugin 'BLACKHOLE'
+2015-03-01 06:00:30 493 [Note] Shutting down plugin 'MyISAM'
+2015-03-01 06:00:30 493 [Note] Shutting down plugin 'MEMORY'
+2015-03-01 06:00:30 493 [Note] Shutting down plugin 'CSV'
+2015-03-01 06:00:30 493 [Note] Shutting down plugin 'MRG_MYISAM'
+2015-03-01 06:00:30 493 [Note] Shutting down plugin 'sha256_password'
+2015-03-01 06:00:30 493 [Note] Shutting down plugin 'mysql_old_password'
+2015-03-01 06:00:30 493 [Note] Shutting down plugin 'mysql_native_password'
+2015-03-01 06:00:30 493 [Note] Shutting down plugin 'binlog'
+2015-03-01 06:00:30 493 [Note] /home/action/.parts/packages/mysql/5.6.13/bin/mysqld: Shutdown complete
+
+150301 06:00:31 mysqld_safe mysqld from pid file /home/action/.parts/var/mysql/pesquisase-193085.pid ended
+150301 15:00:08 mysqld_safe Starting mysqld daemon with databases from /home/action/.parts/var/mysql
+2015-03-01 15:00:11 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2015-03-01 15:00:11 502 [Note] Plugin 'FEDERATED' is disabled.
+2015-03-01 15:00:11 502 [Note] InnoDB: The InnoDB memory heap is disabled
+2015-03-01 15:00:11 502 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2015-03-01 15:00:11 502 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2015-03-01 15:00:11 502 [Note] InnoDB: Using CPU crc32 instructions
+2015-03-01 15:00:11 502 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2015-03-01 15:00:12 502 [Note] InnoDB: Completed initialization of buffer pool
+2015-03-01 15:00:12 502 [Note] InnoDB: Highest supported file format is Barracuda.
+2015-03-01 15:00:15 502 [Note] InnoDB: 128 rollback segment(s) are active.
+2015-03-01 15:00:15 502 [Note] InnoDB: Waiting for purge to start
+2015-03-01 15:00:16 502 [Note] InnoDB: 5.6.13 started; log sequence number 1841268
+2015-03-01 15:00:16 502 [Note] RSA private key file not found: /home/action/.parts/var/mysql//private_key.pem. Some authentication plugins will not work.
+2015-03-01 15:00:16 502 [Note] RSA public key file not found: /home/action/.parts/var/mysql//public_key.pem. Some authentication plugins will not work.
+2015-03-01 15:00:16 502 [Note] Server hostname (bind-address): '*'; port: 3306
+2015-03-01 15:00:16 502 [Note] IPv6 is available.
+2015-03-01 15:00:16 502 [Note]   - '::' resolves to '::';
+2015-03-01 15:00:16 502 [Note] Server socket created on IP: '::'.
+2015-03-01 15:00:16 502 [Note] Event Scheduler: Loaded 0 events
+2015-03-01 15:00:16 502 [Note] /home/action/.parts/packages/mysql/5.6.13/bin/mysqld: ready for connections.
+Version: '5.6.13'  socket: '/tmp/mysql.sock'  port: 3306  Source distribution
+2015-03-02 06:04:04 502 [Note] /home/action/.parts/packages/mysql/5.6.13/bin/mysqld: Normal shutdown
+
+2015-03-02 06:04:05 502 [Note] Giving 0 client threads a chance to die gracefully
+2015-03-02 06:04:05 502 [Note] Event Scheduler: Purging the queue. 0 events
+2015-03-02 06:04:05 502 [Note] Shutting down slave threads
+2015-03-02 06:04:05 502 [Note] Forcefully disconnecting 0 remaining clients
+2015-03-02 06:04:05 502 [Note] Binlog end
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'partition'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'ARCHIVE'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_METRICS'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_CMP'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_LOCKS'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'INNODB_TRX'
+2015-03-02 06:04:05 502 [Note] Shutting down plugin 'InnoDB'
+2015-03-02 06:04:05 502 [Note] InnoDB: FTS optimize thread exiting.
+2015-03-02 06:04:05 502 [Note] InnoDB: Starting shutdown...
+2015-03-02 06:04:07 502 [Note] InnoDB: Shutdown completed; log sequence number 1987882
+2015-03-02 06:04:07 502 [Note] Shutting down plugin 'BLACKHOLE'
+2015-03-02 06:04:07 502 [Note] Shutting down plugin 'MyISAM'
+2015-03-02 06:04:07 502 [Note] Shutting down plugin 'MEMORY'
+2015-03-02 06:04:07 502 [Note] Shutting down plugin 'CSV'
+2015-03-02 06:04:07 502 [Note] Shutting down plugin 'MRG_MYISAM'
+2015-03-02 06:04:07 502 [Note] Shutting down plugin 'sha256_password'
+2015-03-02 06:04:07 502 [Note] Shutting down plugin 'mysql_old_password'
+2015-03-02 06:04:07 502 [Note] Shutting down plugin 'mysql_native_password'
+2015-03-02 06:04:07 502 [Note] Shutting down plugin 'binlog'
+2015-03-02 06:04:07 502 [Note] /home/action/.parts/packages/mysql/5.6.13/bin/mysqld: Shutdown complete
+
+150302 06:04:08 mysqld_safe mysqld from pid file /home/action/.parts/var/mysql/pesquisase-193085.pid ended
+150302 06:11:08 mysqld_safe Starting mysqld daemon with databases from /home/action/.parts/var/mysql
+2015-03-02 06:11:14 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2015-03-02 06:11:14 452 [Warning] Buffered warning: Changed limits: max_open_files: 1024 (requested 5000)
+
+2015-03-02 06:11:14 452 [Warning] Buffered warning: Changed limits: table_cache: 431 (requested 2000)
+
+2015-03-02 06:11:14 452 [Note] Plugin 'FEDERATED' is disabled.
+2015-03-02 06:11:14 452 [Note] InnoDB: The InnoDB memory heap is disabled
+2015-03-02 06:11:14 452 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2015-03-02 06:11:14 452 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2015-03-02 06:11:14 452 [Note] InnoDB: Using CPU crc32 instructions
+2015-03-02 06:11:14 452 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2015-03-02 06:11:15 452 [Note] InnoDB: Completed initialization of buffer pool
+2015-03-02 06:11:16 452 [Note] InnoDB: Highest supported file format is Barracuda.
+2015-03-02 06:11:17 452 [Note] InnoDB: 128 rollback segment(s) are active.
+2015-03-02 06:11:17 452 [Note] InnoDB: Waiting for purge to start
+2015-03-02 06:11:18 452 [Note] InnoDB: 5.6.13 started; log sequence number 1987882
+2015-03-02 06:11:18 452 [Note] RSA private key file not found: /home/action/.parts/var/mysql//private_key.pem. Some authentication plugins will not work.
+2015-03-02 06:11:18 452 [Note] RSA public key file not found: /home/action/.parts/var/mysql//public_key.pem. Some authentication plugins will not work.
+2015-03-02 06:11:18 452 [Note] Server hostname (bind-address): '*'; port: 3306
+2015-03-02 06:11:18 452 [Note] IPv6 is available.
+2015-03-02 06:11:18 452 [Note]   - '::' resolves to '::';
+2015-03-02 06:11:18 452 [Note] Server socket created on IP: '::'.
+2015-03-02 06:11:19 452 [Note] Event Scheduler: Loaded 0 events
+2015-03-02 06:11:19 452 [Note] /home/action/.parts/packages/mysql/5.6.13/bin/mysqld: ready for connections.
+Version: '5.6.13'  socket: '/tmp/mysql.sock'  port: 3306  Source distribution
+2015-03-02 07:00:31 452 [Note] /home/action/.parts/packages/mysql/5.6.13/bin/mysqld: Normal shutdown
+
+2015-03-02 07:00:31 452 [Note] Giving 0 client threads a chance to die gracefully
+2015-03-02 07:00:31 452 [Note] Event Scheduler: Purging the queue. 0 events
+2015-03-02 07:00:31 452 [Note] Shutting down slave threads
+2015-03-02 07:00:31 452 [Note] Forcefully disconnecting 0 remaining clients
+2015-03-02 07:00:31 452 [Note] Binlog end
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'partition'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'ARCHIVE'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_METRICS'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_CMP'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_LOCKS'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'INNODB_TRX'
+2015-03-02 07:00:31 452 [Note] Shutting down plugin 'InnoDB'
+2015-03-02 07:00:31 452 [Note] InnoDB: FTS optimize thread exiting.
+2015-03-02 07:00:31 452 [Note] InnoDB: Starting shutdown...
+2015-03-02 07:00:32 452 [Note] InnoDB: Shutdown completed; log sequence number 1987892
+2015-03-02 07:00:32 452 [Note] Shutting down plugin 'BLACKHOLE'
+2015-03-02 07:00:32 452 [Note] Shutting down plugin 'MyISAM'
+2015-03-02 07:00:32 452 [Note] Shutting down plugin 'MEMORY'
+2015-03-02 07:00:32 452 [Note] Shutting down plugin 'CSV'
+2015-03-02 07:00:32 452 [Note] Shutting down plugin 'MRG_MYISAM'
+2015-03-02 07:00:32 452 [Note] Shutting down plugin 'sha256_password'
+2015-03-02 07:00:32 452 [Note] Shutting down plugin 'mysql_old_password'
+2015-03-02 07:00:32 452 [Note] Shutting down plugin 'mysql_native_password'
+2015-03-02 07:00:32 452 [Note] Shutting down plugin 'binlog'
+2015-03-02 07:00:32 452 [Note] /home/action/.parts/packages/mysql/5.6.13/bin/mysqld: Shutdown complete
+
+150302 07:00:32 mysqld_safe mysqld from pid file /home/action/.parts/var/mysql/pesquisase-193085.pid ended
+150302 15:18:37 mysqld_safe Starting mysqld daemon with databases from /home/action/.parts/var/mysql
+2015-03-02 15:18:38 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2015-03-02 15:18:39 500 [Note] Plugin 'FEDERATED' is disabled.
+2015-03-02 15:18:39 500 [Note] InnoDB: The InnoDB memory heap is disabled
+2015-03-02 15:18:39 500 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2015-03-02 15:18:39 500 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2015-03-02 15:18:39 500 [Note] InnoDB: Using CPU crc32 instructions
+2015-03-02 15:18:39 500 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2015-03-02 15:18:39 500 [Note] InnoDB: Completed initialization of buffer pool
+2015-03-02 15:18:39 500 [Note] InnoDB: Highest supported file format is Barracuda.
+2015-03-02 15:18:39 500 [Note] InnoDB: 128 rollback segment(s) are active.
+2015-03-02 15:18:39 500 [Note] InnoDB: Waiting for purge to start
+2015-03-02 15:18:39 500 [Note] InnoDB: 5.6.13 started; log sequence number 1987892
+2015-03-02 15:18:39 500 [Note] RSA private key file not found: /home/action/.parts/var/mysql//private_key.pem. Some authentication plugins will not work.
+2015-03-02 15:18:39 500 [Note] RSA public key file not found: /home/action/.parts/var/mysql//public_key.pem. Some authentication plugins will not work.
+2015-03-02 15:18:39 500 [Note] Server hostname (bind-address): '*'; port: 3306
+2015-03-02 15:18:39 500 [Note] IPv6 is available.
+2015-03-02 15:18:39 500 [Note]   - '::' resolves to '::';
+2015-03-02 15:18:39 500 [Note] Server socket created on IP: '::'.
+2015-03-02 15:18:40 500 [Note] Event Scheduler: Loaded 0 events
+2015-03-02 15:18:40 500 [Note] /home/action/.parts/packages/mysql/5.6.13/bin/mysqld: ready for connections.
+Version: '5.6.13'  socket: '/tmp/mysql.sock'  port: 3306  Source distribution

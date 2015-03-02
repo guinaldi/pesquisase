@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>  </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/topo.css" rel="stylesheet"/>
+    <script src="assets/js/jquery.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.js" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.js" type="text/javascript"></script>
+    <title> Resposta </title>
   <head>  
+  <body>   
+    <div class="container" style="margin-top:10%;">  
+      <div style="width:100%" >
+    
 <?php  
-   date_default_timezone_set ("America/Sao_Paulo");
+  session_start();
+  if ($_SESSION['ra'] == "" || $_SESSION['ra'] == null) {
+      echo "<script language='javascript' type='text/javascript'>alert('Você não deveria estar aqui! \\n Tchau!');window.location.href='login.html';</script>";
+      die();
+  }
+  $RA  = $_SESSION['ra'];
+  date_default_timezone_set ("America/Sao_Paulo");
   if(isset($_POST['enviar'])){
           if(isset($_POST['radio_curso'])){ $radio_curso =  $_POST['radio_curso'];}else{$radio_curso ='';}
           if(isset($_POST['textinput_datadematricula'])){$textinput_datadematricula = date('d/m/Y', strtotime( $_POST['textinput_datadematricula']));}else {$textinput_datadematricula ='';}
@@ -49,47 +68,163 @@
           if(isset($_POST['radios_enem'])){ $radios_enem =  $_POST['radios_enem'];}else {$radios_enem ='';}
           if(isset($_POST['textinput_notaenem'])){ $textinput_notaenem =  $_POST['textinput_notaenem'];}else {$textinput_notaenem ='';}
           if(isset($_POST['textarea_motivo'])){ $textarea_motivo =  $_POST['textarea_motivo'];}else {$textarea_motivo ='';}
-          echo ($radio_curso);
-          echo ($textinput_datadematricula);
-          echo ($radio_periodo);
-          echo ($radio_municipioresidencia);
-          echo ($checkBox_telefone_0);
-          echo ($checkBox_telefone_1);
-          echo ($checkBox_telefone_2);
-          echo ($radio_operadoras);
-          echo ($textinput_datadenascimento);
-          echo ($radio_estadocivil);
-          echo ($radio_filhos);
-          echo ($textinput_qtdefilhos);
-          echo ($radio_deficiencia);
-          echo ($radio_locomocao);
-          echo ($radio_domicilio);
-          echo ($textinput_domicilio);
-          echo ($radio_moradores);
-          echo ($radio_Nfamiliares);
-          echo ($radio_atvRemunerada);
-          echo ($radio_SomaRenda);
-          echo ($radio_areaTrabalho);
-          echo ($radio_periodoTrabalho);
-          echo ($txt_horastrabalhadas);
-          echo ($radio_trocardehorario);
-          echo ($radio_vidaescolar);
-          echo ($txt_cursouensinomedio);
-          echo ($radio_conhecimentoinformatica);
-          echo ($radio_conhecimentosim);
-          echo ($checkBox_computadoresemcasa_0);
-          echo ($checkBox_computadoresemcasa_1);
-          echo ($radio_internet);
-          echo ($radio_IDIOMAS);
-          echo ($radio_cursosuperior);
-          echo ($textinput_curso1);
-          echo ($radio_cursandocurso);
-          echo ($textinput_fazendocurso);
-          echo ($radios_enem);
-          echo ($textinput_notaenem);
-          echo ($textarea_motivo);
-  }
-  else{
+              
+         if ($checkBox_telefone_0 <> "" and $checkBox_telefone_1 <>"")
+          {
+               $checkBox_telefone = $checkBox_telefone_0 .'/'.$checkBox_telefone_1;
+               $celular = 1;
+               $fixo = 1;
+          }
+          else 
+          {
+              if ($checkBox_telefone_0 <> "" )
+              {
+                 $checkBox_telefone = $checkBox_telefone_0;
+                 $celular = 0;
+                 $fixo = 1;
+                 $radio_operadoras = "";
+              }
+              else
+              {
+                 if ($checkBox_telefone_1 <> "")
+                 {
+                    $checkBox_telefone = $checkBox_telefone_1;
+                    $celular = 1;
+                    $fixo = 0;
+                 }
+                else
+                {
+                  $checkBox_telefone = $checkBox_telefone_2;              
+                  $celular = 0;
+                  $fixo = 1;
+                  $radio_operadoras = "";
+                }
+              }
+            
+          }
     
-  }  
-?>
+          if ($checkBox_computadoresemcasa_0 <> "" and $checkBox_computadoresemcasa_1 <>"")
+          {
+             $checkBox_computadoresemcasa = $checkBox_computadoresemcasa_0 . '/' . $checkBox_computadoresemcasa_1;
+          }
+          else 
+          {
+            if ($checkBox_computadoresemcasa_0 <> "" )
+            {
+                $checkBox_computadoresemcasa = $checkBox_computadoresemcasa_0;
+            } 
+            else 
+            {
+               if ($checkBox_computadoresemcasa_1 <> "" )
+               {
+                 $checkBox_computadoresemcasa = $checkBox_computadoresemcasa_1;
+               }
+            }
+          }
+   
+          if ($radio_areaTrabalho == "Estou desempregado/a" or $radio_areaTrabalho == "Nunca trabalhei" )
+          {
+            $radio_periodoTrabalho = "";
+            $txt_horastrabalhadas = "";
+            $radio_trocardehorario ="";
+          }
+    
+          if ($radio_conhecimentoinformatica == "Não" )
+          {
+              $radio_conhecimentosim = "";
+          }
+    
+          if ($radio_cursosuperior == "Não" )
+          {
+            $textinput_curso1 = "";
+          }
+    
+          if ($radio_cursandocurso == "Não" )
+          {
+            $textinput_fazendocurso = "";
+          }
+    
+          if ($radios_enem == "Não" )
+          {
+            $textinput_notaenem = "";
+          }
+    
+         /* echo ('radio_curso:<b style="color:red;"> ' . $radio_curso . '</b><br />');
+          echo ('textinput_datadematricula:<b style="color:red;"> ' . $textinput_datadematricula . '</b><br />');
+          echo ('radio_periodo:<b style="color:red;"> ' . $radio_periodo . '</b><br />');
+          echo ('radio_municipioresidencia:<b style="color:red;"> ' . $radio_municipioresidencia . '</b><br />');
+          echo ('checkBox_telefone:<b style="color:red;"> ' . $checkBox_telefone . '</b><br />');
+          //echo ($checkBox_telefone_1 . '</b><br />');
+          //echo ($checkBox_telefone_2 . '</b><br />');
+          echo ('radio_operadoras:<b style="color:red;"> ' . $radio_operadoras . '</b><br />');
+          echo ('textinput_datadenascimento:<b style="color:red;"> ' . $textinput_datadenascimento . '</b><br />');
+          echo ('radio_estadocivil:<b style="color:red;"> ' . $radio_estadocivil . '</b><br />');
+          echo ('radio_filhos:<b style="color:red;"> ' . $radio_filhos . '</b><br />');
+          echo ('textinput_qtdefilhos:<b style="color:red;"> ' . $textinput_qtdefilhos . '</b><br />');
+          echo ('radio_deficiencia:<b style="color:red;"> ' . $radio_deficiencia . '</b><br />');
+          echo ('radio_locomocao:<b style="color:red;"> ' . $radio_locomocao . '</b><br />');
+          echo ('radio_domicilio:<b style="color:red;"> ' . $radio_domicilio . '</b><br />');
+          echo ('textinput_domicilio:<b style="color:red;"> ' . $textinput_domicilio . '</b><br />');
+          echo ('radio_moradores:<b style="color:red;"> ' . $radio_moradores . '</b><br />');
+          echo ('radio_Nfamiliares:<b style="color:red;"> ' . $radio_Nfamiliares . '</b><br />');
+          echo ('radio_atvRemunerada:<b style="color:red;"> ' . $radio_atvRemunerada . '</b><br />');
+          echo ('radio_SomaRenda:<b style="color:red;"> ' . $radio_SomaRenda . '</b><br />');
+          echo ('radio_areaTrabalho:<b style="color:red;"> ' . $radio_areaTrabalho . '</b><br />');
+          echo ('radio_periodoTrabalho:<b style="color:red;"> ' . $radio_periodoTrabalho . '</b><br />');
+          echo ('txt_horastrabalhadas:<b style="color:red;"> ' . $txt_horastrabalhadas . '</b><br />');
+          echo ('radio_trocardehorario:<b style="color:red;"> ' . $radio_trocardehorario . '</b><br />');
+          echo ('radio_vidaescolar:<b style="color:red;"> ' . $radio_vidaescolar . '</b><br />');
+          echo ('txt_cursouensinomedio:<b style="color:red;"> ' . $txt_cursouensinomedio . '</b><br />');
+          echo ('radio_conhecimentoinformatica:<b style="color:red;"> ' . $radio_conhecimentoinformatica . '</b><br />');
+          echo ('radio_conhecimentosim:<b style="color:red;"> ' . $radio_conhecimentosim . '</b><br />');
+          echo ('checkBox_computadoresemcasa:<b style="color:red;"> ' . $checkBox_computadoresemcasa . '</b><br />');
+          //echo ($checkBox_computadoresemcasa_1 . '</b><br />');
+          echo ('radio_internet:<b style="color:red;"> ' . $radio_internet . '</b><br />');
+          echo ('radio_IDIOMAS:<b style="color:red;"> ' . $radio_IDIOMAS . '</b><br />');
+          echo ('radio_cursosuperior:<b style="color:red;"> ' . $radio_cursosuperior . '</b><br />');
+          echo ('textinput_curso1:<b style="color:red;"> ' . $textinput_curso1 . '</b><br />');
+          echo ('radio_cursandocurso:<b style="color:red;"> ' . $radio_cursandocurso . '</b><br />');
+          echo ('textinput_fazendocurso:<b style="color:red;"> ' .$textinput_fazendocurso . '</b><br />');
+          echo ('radios_enem:<b style="color:red;"> ' .$radios_enem . '</b><br />');
+          echo ('textinput_notaenem:<b style="color:red;"> ' .$textinput_notaenem . '</b><br />');
+          echo ('textarea_motivo:<b style="color:red;"> ' .$textarea_motivo . '</b><br />');*/     
+    
+          $servername = "localhost";
+          $username = "root";
+          $password = "cloudFatec";
+          $dbname = "pesquisa";
+          $conn = mysqli_connect($servername, $username, $password, $dbname);
+          if (!$conn) {
+            die("<script language='javascript' type='text/javascript'>alert('Ops, falha ao conectar no banco de dados, tente novamente.');window.location.href='cadastro.html';</script>");
+          }
+    
+          $sql =  "INSERT INTO `Respostas`(`RA`, `curso`, `datam`, `periodo`, `cidade`, `tel`, `qntcel`, `nascimento`, `civil`, `filhos`, `qntfilhos`, `deficiencia`, `conducao`, `sitdomi`, `tempodomi`, `quemdomi`, `qntfamilia`, `qntfamiliat`, `rendafamilia`, `areatrabalho`, `periodotrabalho`, `horastrabalho`, `trocatrabalho`, `classestudo`, `ondeestudo`, `info`, `nivelinfo`, `computador`, `internet`, `idioma`, `jasuperior`, `qualsuperior`, `estasuperior`, `estaqualsuperior`, `enem`, `notaenem`, `vestibular`, `fixo`, `cel`)
+     VALUES 
+    ('".$RA."','" .$radio_curso. "','" .$textinput_datadematricula. "','" .$radio_periodo. "','" .$radio_municipioresidencia. "','" . $checkBox_telefone . "','" .$radio_operadoras. "','" .$textinput_datadenascimento. "','" .$radio_estadocivil. "','" .$radio_filhos. "','" .$textinput_qtdefilhos. "','" .$radio_deficiencia. "','" .$radio_locomocao. "','" .$radio_domicilio. "','" .$textinput_domicilio. "','" . $radio_atvRemunerada. "','" .$radio_moradores. "','" .$radio_Nfamiliares. "','" .$radio_SomaRenda. "','" .$radio_areaTrabalho. "','" .$radio_periodoTrabalho. "','" .$txt_horastrabalhadas. "','" .$radio_trocardehorario. "','" .$radio_vidaescolar. "','" .$txt_cursouensinomedio. "','" .$radio_conhecimentoinformatica. "','" .$radio_conhecimentosim. "','" .$checkBox_computadoresemcasa. "','" .$radio_internet. "','" .$radio_IDIOMAS. "','" .$radio_cursosuperior. "','" .$textinput_curso1. "','" .$radio_cursandocurso. "','" .$textinput_fazendocurso. "','" .$radios_enem. "','" .$textinput_notaenem. "','" .$textarea_motivo. "','" .$fixo. "','" .$celular. "')";
+
+          if (mysqli_query($conn, $sql)) 
+          {
+            echo ("Tudo certo! <br/> <br/> Obrigado por responder o questionário.<br/>  Assim que todos responderem, vamos liberar a planilha em excel aqui mesmo para fazermos os gráficos.<br/> <br/> Obrigado!");
+          }
+          else 
+          {
+            if (mysqli_error($conn)){
+              echo("Você já nos respondeu! <br /> Nós não atualizamos suas respostas anteriores, se deseja isso entre em contato pelo e-mail: <a href='adsfatec2014.2@gmail.com'>adsfatec2014.2@gmail.com</a>  <br /> Não esqueça de infrmar seu número de RA.<br /><br /> Obrigado!");
+            }
+            else{
+            echo("Ops, Falha ao registrar sua resposta! Por favor, volte e tente novamente. <br/> Detalhes do erro: <br /> <b> " .  mysqli_error($conn) ."</b>");
+            }
+          }
+
+          mysqli_close($conn);
+  } 
+echo "<div style='width:20%; font-size:12px; background-color:; top:0px; margin-left:400px;margin-top:-30px; float: right'> <i style='color:blue'>   <a href='index.php?p=sair' type='' class='btn btn-danger' style='float:right;margin-top:3px; margin-right: 40px; '>Sair</a>";
+          if (isset($_GET['p'])) {
+            session_destroy();
+            echo("<script>location.href = 'login.html';</script>");
+          }
+          ?>
+              </div>  
+              </div>  
+  </body>
+</html>
