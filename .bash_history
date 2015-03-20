@@ -73,3 +73,61 @@ git config --global user.email "guinaldi@hotmail.com"
 git config --global user.name "GuiNaldi" 
 git commit -m "Initial Commit"
 git push origin master
+git remote -v
+git status
+git commit -m "Último Push"
+git push origin master
+git init
+git remote -v
+git add www/*
+git add workspace/www/*
+git commit -am "Innitial Commit"
+git status
+git push origin master
+heroku login
+git
+git status
+git pull heroku master
+heroku
+heroku git
+heroku config
+git add .
+git push heroku
+heroku create
+heroku login
+heroku create
+heroku create pesquisafatec
+git remote -v
+heroku create pesquisase
+heroku create pesquisafatec
+git remote -v
+git push heroku
+heroku login
+git remote -v
+heroku delete
+heroku help
+heroku login
+heroku git:remote -a pesquisase
+heroku git:remote -a pesquisafatec
+git remote -v
+git push heroku master
+git remote show heroku
+git remote
+heroku push master
+git push heroku
+heroku remote
+git remote
+git status
+git remote add github git@github.com:guinaldi/pesquisase.git
+git push heroku master
+git add \workspace\www *
+git add /workspace/www *
+git add localhost /workspace/www *
+git add localhost/workspace/www *
+git add localhost/workspace/www .
+git add ~/workspace/www .
+git add ~/workspace/www *
+git push heroku master
+pear
+pear list-all
+git add *

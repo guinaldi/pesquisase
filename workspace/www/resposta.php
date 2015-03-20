@@ -198,6 +198,47 @@
             die("<script language='javascript' type='text/javascript'>alert('Ops, falha ao conectar no banco de dados, tente novamente.');window.location.href='cadastro.html';</script>");
           }
     
+    
+    $RA = str_replace("'" '"', $RA);
+$radio_curso =  str_replace("'" '"', $radio_curso);
+$textinput_datadematricula =  str_replace("'" '"', $textinput_datadematricula);
+$radio_periodo =  str_replace("'" '"', $radio_periodo);
+$radio_municipioresidencia =  str_replace("'" '"', $radio_municipioresidencia);
+$checkBox_telefone =  str_replace("'" '"', $checkBox_telefone);
+/$radio_operadoras =  str_replace("'" '"', /$radio_operadoras);
+$textinput_datadenascimento =  str_replace("'" '"', $textinput_datadenascimento);
+$radio_estadocivil =  str_replace("'" '"', $radio_estadocivil);
+$radio_filhos =  str_replace("'" '"', $radio_filhos);
+$textinput_qtdefilhos =  str_replace("'" '"', $textinput_qtdefilhos);
+$radio_deficiencia =  str_replace("'" '"', $radio_deficiencia);
+$radio_locomocao =  str_replace("'" '"', $radio_locomocao);
+$radio_domicilio =  str_replace("'" '"', $radio_domicilio);
+$textinput_domicilio =  str_replace("'" '"', $textinput_domicilio);
+$radio_atvRemunerada =  str_replace("'" '"', $radio_atvRemunerada);
+$radio_moradores =  str_replace("'" '"', $radio_moradores);
+$radio_Nfamiliares =  str_replace("'" '"', $radio_Nfamiliares);
+$radio_SomaRenda =  str_replace("'" '"', $radio_SomaRenda);
+$radio_areaTrabalho =  str_replace("'" '"', $radio_areaTrabalho);
+$radio_periodoTrabalho =  str_replace("'" '"', $radio_periodoTrabalho);
+$txt_horastrabalhadas =  str_replace("'" '"', $txt_horastrabalhadas);
+$radio_trocardehorario =  str_replace("'" '"', $radio_trocardehorario);
+$radio_vidaescolar =  str_replace("'" '"', $radio_vidaescolar);
+$txt_cursouensinomedio =  str_replace("'" '"', $txt_cursouensinomedio);
+$radio_conhecimentoinformatica =  str_replace("'" '"', $radio_conhecimentoinformatica);
+$radio_conhecimentosim =  str_replace("'" '"', $radio_conhecimentosim);
+$checkBox_computadoresemcasa =  str_replace("'" '"', $checkBox_computadoresemcasa);
+$radio_internet =  str_replace("'" '"', $radio_internet);
+$radio_IDIOMAS =  str_replace("'" '"', $radio_IDIOMAS);
+$radio_cursosuperior =  str_replace("'" '"', $radio_cursosuperior);
+$textinput_curso1 =  str_replace("'" '"', $textinput_curso1);
+$radio_cursandocurso =  str_replace("'" '"', $radio_cursandocurso);
+$textinput_fazendocurso =  str_replace("'" '"', $textinput_fazendocurso);
+$radios_enem =  str_replace("'" '"', $radios_enem);
+$textinput_notaenem =  str_replace("'" '"', $textinput_notaenem);
+$textarea_motivo =  str_replace("'" '"', $textarea_motivo);
+$fixo =  str_replace("'" '"', $fixo);
+$celular =  str_replace("'" '"', $celular);
+    
           $sql =  "INSERT INTO `Respostas`(`RA`, `curso`, `datam`, `periodo`, `cidade`, `tel`, `qntcel`, `nascimento`, `civil`, `filhos`, `qntfilhos`, `deficiencia`, `conducao`, `sitdomi`, `tempodomi`, `quemdomi`, `qntfamilia`, `qntfamiliat`, `rendafamilia`, `areatrabalho`, `periodotrabalho`, `horastrabalho`, `trocatrabalho`, `classestudo`, `ondeestudo`, `info`, `nivelinfo`, `computador`, `internet`, `idioma`, `jasuperior`, `qualsuperior`, `estasuperior`, `estaqualsuperior`, `enem`, `notaenem`, `vestibular`, `fixo`, `cel`)
      VALUES 
     ('".$RA."','" .$radio_curso. "','" .$textinput_datadematricula. "','" .$radio_periodo. "','" .$radio_municipioresidencia. "','" . $checkBox_telefone . "','" .$radio_operadoras. "','" .$textinput_datadenascimento. "','" .$radio_estadocivil. "','" .$radio_filhos. "','" .$textinput_qtdefilhos. "','" .$radio_deficiencia. "','" .$radio_locomocao. "','" .$radio_domicilio. "','" .$textinput_domicilio. "','" . $radio_atvRemunerada. "','" .$radio_moradores. "','" .$radio_Nfamiliares. "','" .$radio_SomaRenda. "','" .$radio_areaTrabalho. "','" .$radio_periodoTrabalho. "','" .$txt_horastrabalhadas. "','" .$radio_trocardehorario. "','" .$radio_vidaescolar. "','" .$txt_cursouensinomedio. "','" .$radio_conhecimentoinformatica. "','" .$radio_conhecimentosim. "','" .$checkBox_computadoresemcasa. "','" .$radio_internet. "','" .$radio_IDIOMAS. "','" .$radio_cursosuperior. "','" .$textinput_curso1. "','" .$radio_cursandocurso. "','" .$textinput_fazendocurso. "','" .$radios_enem. "','" .$textinput_notaenem. "','" .$textarea_motivo. "','" .$fixo. "','" .$celular. "')";
@@ -208,14 +249,15 @@
           }
           else 
           {
-            if (mysqli_error($conn)){
+            if (strpos(mysqli_error($conn), 'DUPLICATE') !== FALSE)
+            {
               echo("Você já nos respondeu! <br /> Nós não atualizamos suas respostas anteriores, se deseja isso entre em contato pelo e-mail: <a href='adsfatec2014.2@gmail.com'>adsfatec2014.2@gmail.com</a>  <br /> Não esqueça de infrmar seu número de RA.<br /><br /> Obrigado!");
             }
-            else{
-            echo("Ops, Falha ao registrar sua resposta! Por favor, volte e tente novamente. <br/> Detalhes do erro: <br /> <b> " .  mysqli_error($conn) ."</b>");
+            else
+            {
+              echo("Ops, Falha ao registrar sua resposta! Por favor, volte e tente novamente. <br/> Detalhes do erro: <br /> <b> " .  mysqli_error($conn) ."</b>");
             }
           }
-
           mysqli_close($conn);
   } 
 echo "<div style='width:20%; font-size:12px; background-color:; top:0px; margin-left:400px;margin-top:-30px; float: right'> <i style='color:blue'>   <a href='index.php?p=sair' type='' class='btn btn-danger' style='float:right;margin-top:3px; margin-right: 40px; '>Sair</a>";
