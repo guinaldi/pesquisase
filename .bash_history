@@ -131,3 +131,17 @@ git push heroku master
 pear
 pear list-all
 git add *
+git status
+git add *
+git commit -am "Final"
+git push
+git push origin master
+git status
+ git add include/*
+ git add includes/*
+ git add workspace/www/includes/*
+ git add workspace/www/resultados.php
+ git add workspace/www/chart/*
+ git add workspace/www/assets/*
+git commit -am "resultados"
+git push origin master

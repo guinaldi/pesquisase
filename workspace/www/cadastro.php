@@ -8,7 +8,6 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <script src="assets/js/jquery.js" type="text/javascript"></script>
     <script src="assets/js/bootstrap.js" type="text/javascript"></script>
-   
     <title> Cadastro de Usuario </title>
   <head>  
   <?php

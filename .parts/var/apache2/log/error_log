@@ -1692,3 +1692,24 @@ sh: 1: -t: not found
 [Fri Mar 20 18:00:25.132893 2015] [mpm_event:notice] [pid 356:tid 140131058476800] AH00491: caught SIGTERM, shutting down
 [Fri Mar 20 21:20:59.399731 2015] [mpm_event:notice] [pid 354:tid 139739238352640] AH00489: Apache/2.4.7 (Unix) PHP/5.5.11 configured -- resuming normal operations
 [Fri Mar 20 21:20:59.399913 2015] [core:notice] [pid 354:tid 139739238352640] AH00094: Command line: '/home/action/.parts/packages/apache2/2.4.7-nitrous1/bin/httpd'
+[Fri Mar 20 23:00:26.577523 2015] [mpm_event:notice] [pid 354:tid 139739238352640] AH00491: caught SIGTERM, shutting down
+[Fri Mar 20 23:20:14.043357 2015] [mpm_event:notice] [pid 357:tid 140454864672512] AH00489: Apache/2.4.7 (Unix) PHP/5.5.11 configured -- resuming normal operations
+[Fri Mar 20 23:20:14.043531 2015] [core:notice] [pid 357:tid 140454864672512] AH00094: Command line: '/home/action/.parts/packages/apache2/2.4.7-nitrous1/bin/httpd'
+[Fri Mar 20 23:34:26.429552 2015] [:error] [pid 362:tid 140454548989696] [client 192.168.209.1:54730] PHP Notice:  Undefined index: nome in /home/action/workspace/www/index.php on line 314
+[Fri Mar 20 23:34:34.939475 2015] [mpm_event:error] [pid 357:tid 140454864672512] AH00484: server reached MaxRequestWorkers setting, consider raising the MaxRequestWorkers setting
+[Sat Mar 21 02:00:21.409889 2015] [mpm_event:notice] [pid 357:tid 140454864672512] AH00491: caught SIGTERM, shutting down
+[Sat Mar 21 20:46:48.313531 2015] [mpm_event:notice] [pid 373:tid 140632676935424] AH00489: Apache/2.4.7 (Unix) PHP/5.5.11 configured -- resuming normal operations
+[Sat Mar 21 20:46:48.357728 2015] [core:notice] [pid 373:tid 140632676935424] AH00094: Command line: '/home/action/.parts/packages/apache2/2.4.7-nitrous1/bin/httpd'
+[Sat Mar 21 20:54:32.418378 2015] [:error] [pid 390:tid 140632444487424] [client 192.168.209.1:58746] PHP Notice:  Undefined index: nome in /home/action/workspace/www/index.php on line 314
+[Sat Mar 21 20:59:47.422200 2015] [:error] [pid 390:tid 140632452880128] [client 192.168.209.1:59388] PHP Notice:  Undefined index: nome in /home/action/workspace/www/index.php on line 314
+[Sat Mar 21 23:00:25.815097 2015] [mpm_event:notice] [pid 373:tid 140632676935424] AH00491: caught SIGTERM, shutting down
+[Sun Mar 22 16:41:21.473355 2015] [mpm_event:notice] [pid 357:tid 140153289418496] AH00489: Apache/2.4.7 (Unix) PHP/5.5.11 configured -- resuming normal operations
+[Sun Mar 22 16:41:21.493159 2015] [core:notice] [pid 357:tid 140153289418496] AH00094: Command line: '/home/action/.parts/packages/apache2/2.4.7-nitrous1/bin/httpd'
+[Sun Mar 22 16:41:32.321761 2015] [:error] [pid 399:tid 140153048577792] [client 192.168.209.1:34611] PHP Notice:  Undefined index: nome in /home/action/workspace/www/index.php on line 314
+[Sun Mar 22 16:42:40.556257 2015] [mpm_event:error] [pid 357:tid 140153289418496] AH00484: server reached MaxRequestWorkers setting, consider raising the MaxRequestWorkers setting
+[Sun Mar 22 19:00:19.686487 2015] [mpm_event:notice] [pid 357:tid 140153289418496] AH00491: caught SIGTERM, shutting down
+[Wed Apr 29 19:44:33.960986 2015] [mpm_event:notice] [pid 362:tid 140426504337152] AH00489: Apache/2.4.7 (Unix) PHP/5.5.11 configured -- resuming normal operations
+[Wed Apr 29 19:44:33.979575 2015] [core:notice] [pid 362:tid 140426504337152] AH00094: Command line: '/home/action/.parts/packages/apache2/2.4.7-nitrous1/bin/httpd'
+[Wed Apr 29 23:00:31.730839 2015] [mpm_event:notice] [pid 362:tid 140426504337152] AH00491: caught SIGTERM, shutting down
+[Mon May 18 13:17:47.687158 2015] [mpm_event:notice] [pid 361:tid 140025141978880] AH00489: Apache/2.4.7 (Unix) PHP/5.5.11 configured -- resuming normal operations
+[Mon May 18 13:17:47.710844 2015] [core:notice] [pid 361:tid 140025141978880] AH00094: Command line: '/home/action/.parts/packages/apache2/2.4.7-nitrous1/bin/httpd'
